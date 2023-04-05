@@ -83,6 +83,7 @@ a:hover {
   margin: 0 auto;
   padding: 20px;
   padding-top: 100px;
+  display: flex;
 }
 
 
@@ -135,6 +136,7 @@ display: grid;
 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 grid-gap: 20px;
 padding: 20px;
+flex-grow: 1;
 }
 
 /* Footer Styles */
@@ -188,6 +190,22 @@ footer ul li a:hover {
   color: #555;
 }
 
+/* Footer links */
+.footer-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links li:last-child {
+  margin-right: 0;
+}
+
   /*Feedback form/ About us page*/
 
   form {
@@ -218,6 +236,7 @@ footer ul li a:hover {
     border: 5px;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
   }
   
   input[type="submit"]:hover {
@@ -233,13 +252,13 @@ footer ul li a:hover {
   }
   
   .sentence2 {
-    text-align: right;
-    color: #000000;
-    font-size: large;
-    font-weight: 1000;
-    padding-right: 40px;
-    
-  
+    background-color: #f0f0f0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px 0;
   }
 
   .exhibition{
@@ -252,3 +271,46 @@ footer ul li a:hover {
     background-repeat: no-repeat;
     
   }
+
+  /* About us Image */ 
+
+  .gallery-image {
+    max-width: 50%;
+    height: auto;
+    margin: 20px 0;
+    display: block;
+}
+
+  /* Set sidebar styles - All of this added */ 
+  
+.sidebar {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+.sidebar h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 5px;
+}
+
+.sidebar ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
