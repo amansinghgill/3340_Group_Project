@@ -13,21 +13,25 @@
         <nav class = "navbar">
           <ul>
             <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('aboutus')}}">About Us</a></li>
+            <li><a href="{{url_for('register')}}">Signup</a></li>
             <li><a href="{{url_for('login')}}">Log In</a></li>
-            <li><a href="{{url_for('register')}}">Signup</a><li>
+            <li><a href="{{url_for('logout')}}">Logout</a></li>
           </ul>
         </nav>
       </div>
-    <p class="sentence">Canary's Art Gallery founded in 1890 after the death of Vincent Van Gogh. Canary's Art Gallery represents the best of the art that tells a story
-        and requires thought in-order to understand the meaning of Art. Our Gallery features pieces that can be worth upto 23.7 million dollars. Canary's Art Galler 
-        proudly displays and helps find these paintings a better home. The paintings are kept in top original quality by our experts at Canary's Art Gallery.
-
-    </p>
-
-<div class = exhibition>
-    <p class="sentence2">Join us for our exhibition on Apil 19th at St Clair College for our in-person sale. You can also purchase online through our <a href="products.html">product</a> portal. </p>
-
-</div>
+    <div class="main-content">
+        <div class="left-content">
+            <p class="sentence">Canary's Art Gallery founded in 1890 after the death of Vincent Van Gogh. Canary's Art Gallery represents the best of the art that tells a story
+                and requires thought in-order to understand the meaning of Art. Our Gallery features pieces that can be worth upto 23.7 million dollars. Canary's Art Gallery 
+                proudly displays and helps find these paintings a better home. The paintings are kept in top original quality by our experts at Canary's Art Gallery.
+            </p>
+            <img src="{{ url_for('static', filename='img/aboutus.jpg') }}" alt="gallery" class="gallery-image">
+        </div>
+        <div class="exhibition">
+            <p class="sentence2">Join us for our exhibition on April 19th at St Clair College for our in-person sale. You can also purchase online through our <a href="products.html">product</a> portal. </p>
+        </div>
+    </div>
     <footer>
         <div class="container">
             <div class="col-md-3">
@@ -38,10 +42,7 @@
                 <li><a href="https://www.twitter.com/">Twitter</a></li>
               </ul>
             </div>
-            </div>
-          </div>
         </div>
-      </footer>
-      
-    </body>
-    </html>
+    </footer>
+</body>
+</html>
